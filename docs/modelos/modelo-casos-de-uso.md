@@ -245,21 +245,31 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
 
 ### 6.2 Descripción detallada UC-21 — Buscar recetas
 
-**Identificador y nombre del caso de uso:** [Indica el caso.]
+**Identificador y nombre del caso de uso:** Buscar recetas
 
-**Objetivo:** [Explica qué resultado pretende obtener el participante.]
+**Objetivo:** Encontrar una receta que cumpla sus criterios de búsqueda
 
-**Participantes:** [Indica el actor principal y los actores de apoyo, si los hay.]
+**Participantes:** Usuario registrado
 
-**Precondiciones:** [Indica qué se da por cumplido al comenzar. Las comprobaciones que realiza el sistema pertenecen al flujo.]
+**Precondiciones:** El usuario debe haber iniciado sesión
 
-**Inicio:** [Indica qué acción o suceso inicia el caso.]
+**Inicio:** El usuario selecciona la opción de filtrado de resultados al buscar
 
-**Escenario principal de éxito:** [Describe la secuencia entre los participantes y el sistema.]
+**Escenario principal de éxito:** 
+1. El usuario selecciona que ingredientes desea incluir y cuales desea excluir.
+2. El sistema busca recetas que coincidan con los campos texto, incluir y excluir entre las recetas validadas.
+3. El sistema muestra los resultados por fecha de publicación.
+4. El usuario selecciona un resultado.
+5. El sistema muestra el resultado seleccionado en detalle.
 
-**Extensiones (flujos alternativos):** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
+**Extensiones (flujos alternativos):** 
+2a. Si el sistema encuentra un error ortográfico propone una corrección.
+3a. Si ninguna receta coincide con los criterios el sistema indica que no hay resultados.
+
 
 **Postcondiciones:** [Indica qué queda establecido con éxito y qué se conserva o cambia si el caso termina sin éxito o se cancela. Una consulta no requiere modificar datos para alcanzar su objetivo.]
+6. El sistema conserva los criterios y orden de la última búsqueda.
+3a. El sistema conserva los criterios de búsqueda.
 
 **Reglas y NFR pertinentes:** [Remite a los requisitos y actas que condicionan el comportamiento.]
 
